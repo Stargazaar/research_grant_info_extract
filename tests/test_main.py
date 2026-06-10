@@ -1,4 +1,4 @@
-from project_name import __version__
+from research_grant import __version__
 
 
 def test_version() -> None:

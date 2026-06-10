@@ -6,17 +6,20 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "python-dotenv>=1.0.0",
+    "langgraph>=0.2.0",
+    "langchain-openai>=0.2.0",
+    "openpyxl>=3.1.0",
 ]
 
 [project.scripts]
-project-name = "project_name.main:main"
+research-grant = "research_grant.main:main"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/project_name"]
+packages = ["src/research_grant"]
 
 [dependency-groups]
 dev = [
